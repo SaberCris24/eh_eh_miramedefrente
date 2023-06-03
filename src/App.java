@@ -8,6 +8,7 @@ public class App {
         
         for (int i = 0; i < edades.length; i++) {
             System.out.println("edades[" + i + "] = " + edades[i]);
+            System.out.println("mamaguevo");
         }
     }
 }
