@@ -1,7 +1,5 @@
 import java.util.Arrays;
 
-import javax.sound.midi.Soundbank;
-
 public class App {
     public static void main(String[] args) throws Exception {
         int[] edades = new int[] {10, 30, 50, 70, 80, 85};
