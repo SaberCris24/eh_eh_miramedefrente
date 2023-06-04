@@ -1,0 +1,8 @@
+
+            int suma = Arrays.stream(svector).reduce(1, (a, b) -> a * b); = Multiplicacion
+
+            int suma = Arrays.stream(svector).reduce(1, (a, b) -> a - b); = Resta
+
+            int suma = Arrays.stream(svector).reduce(1, (a, b) -> a / b); = Resta
+            
+            int suma = Arrays.stream(svector).sum(); = Suma
