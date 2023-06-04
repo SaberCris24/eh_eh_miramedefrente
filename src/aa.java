@@ -9,8 +9,7 @@ public class aa {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 
-        int contador = 1;
-        int contador2 = 1;
+        int contador = 1, contador2 = 1;
         int x = 0;
         boolean reiniciar = true;
 
