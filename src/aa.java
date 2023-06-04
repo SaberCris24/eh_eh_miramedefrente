@@ -11,13 +11,19 @@ public class aa {
 
         int contador = 1;
         int contador2 = 1;
+        int x = 0;
+        boolean reiniciar = true;
 
-        try{
+        while (reiniciar) {
             
-        System.out.println("Ingrese la cantidad de jugadores");
-        String dim = br.readLine();
-        int x = Integer.parseInt(dim);
-        int futbol[][] = new int[x][2];
+        try{
+            do {
+                System.out.println("Ingrese la cantidad de jugadores (min: 2)");
+                String dim = br.readLine();
+                x = Integer.parseInt(dim);
+            } while (x <= 1);
+
+            int futbol[][] = new int[x][2];
 
             for (int i = 0; i < futbol.length; i++) {
 
@@ -36,15 +42,19 @@ public class aa {
         
         System.out.println("Matriz fuvol: ");
         for (int i = 0; i < futbol.length; i++) {
-            System.out.println("Goles del jugador n°" + (i + 1) + ": " + Arrays.toString(futbol[i]));
+            System.out.println("Goles/partidos del jugador n°" + (i + 1) + ": " + Arrays.toString(futbol[i]));
         }
+        
+        reiniciar = false;
 
     } catch(NumberFormatException  | NegativeArraySizeException e) {
             System.out.println("Tipo de dato no valido");
+            reiniciar = true;
         } 
         finally {
-            br.close();
-            isr.close();
         }
+    }  
+    br.close();
+    isr.close();
     }
 }
