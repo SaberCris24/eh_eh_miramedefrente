@@ -33,8 +33,9 @@ public class aa {
 
         } 
         
+        System.out.println("Matriz fuvol: ");
         for (int i = 0; i < futbol.length; i++) {
-            System.out.println("Goles del jugador N°"+ (i + 1) + ": " + Arrays.deepToString(futbol));
+            System.out.println(Arrays.toString(futbol[i]));
         }
 
     } catch(NumberFormatException ex){
