@@ -1,4 +1,0 @@
-        System.out.println("Matriz fuvol: ");
-        for (int i = 0; i < futbol.length; i++) {
-            System.out.println(Arrays.toString(futbol[i]));
-        }
