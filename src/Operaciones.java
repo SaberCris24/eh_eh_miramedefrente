@@ -8,14 +8,20 @@ public class Operaciones {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int x = 0;
-        int y = 0;
 
         try {
             System.out.println("Ingresa el numero de filas");
             x = Integer.parseInt(br.readLine());
+            int suma [][] = new int[x][1];
 
-            System.out.println("Ingres el numeor de columnas");
-            y = Integer.parseInt(br.readLine());
+
+            
+            //for (int i = 0 ; i < suma.length; i++) {
+              //  int number = 0, number2 = 0;
+              //  number = suma[i][1];
+              //  number2 = suma[i+1][1];
+
+            //}
 
         } catch (NumberFormatException | NegativeArraySizeException e) {
             System.out.println("Tipo de dato incorrecto");
