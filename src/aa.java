@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 
 public class aa {
     public static void main(String[] args) throws IOException{
-        InputStreamReader isr = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(isr);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int contador = 1, contador2 = 1;
         int x = 0;
@@ -54,6 +53,5 @@ public class aa {
         }
     }  
     br.close();
-    isr.close();
     }
 }
